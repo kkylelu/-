@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,92 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="午餐吃什麼" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="4kF-Ib-lAf">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xP7-iE-svC">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="245.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="午餐吃什麼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4o-p6-qGM">
+                                                <rect key="frame" x="125.66666666666669" y="106" width="142" height="33.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="K4o-p6-qGM" firstAttribute="centerX" secondItem="xP7-iE-svC" secondAttribute="centerX" id="fr8-pg-Me5"/>
+                                            <constraint firstItem="K4o-p6-qGM" firstAttribute="centerY" secondItem="xP7-iE-svC" secondAttribute="centerY" id="gty-9n-YTp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNX-fH-FY8">
+                                        <rect key="frame" x="0.0" y="256.66666666666669" width="393" height="245.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="250" placeholderIntrinsicHeight="250" image="cn" translatesAutoresizingMaskIntoConstraints="NO" id="SN3-Yg-bk8">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="245.66666666666666"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SN3-Yg-bk8" firstAttribute="top" secondItem="aNX-fH-FY8" secondAttribute="top" id="79T-rJ-3f7"/>
+                                            <constraint firstAttribute="trailing" secondItem="SN3-Yg-bk8" secondAttribute="trailing" id="AzV-FB-ue7"/>
+                                            <constraint firstItem="SN3-Yg-bk8" firstAttribute="centerY" secondItem="aNX-fH-FY8" secondAttribute="centerY" id="Wmn-tS-7Zg"/>
+                                            <constraint firstAttribute="bottom" secondItem="SN3-Yg-bk8" secondAttribute="bottom" id="Zu2-7J-LJD"/>
+                                            <constraint firstItem="SN3-Yg-bk8" firstAttribute="centerX" secondItem="aNX-fH-FY8" secondAttribute="centerX" id="dTh-Sw-Jx6"/>
+                                            <constraint firstItem="SN3-Yg-bk8" firstAttribute="leading" secondItem="aNX-fH-FY8" secondAttribute="leading" id="tIJ-W0-IC6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-Oe-jG0">
+                                        <rect key="frame" x="0.0" y="513.33333333333337" width="393" height="245.66666666666663"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SyS-KU-v3f">
+                                                <rect key="frame" x="145" y="100.33333333333326" width="103.33333333333331" height="45.333333333333343"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="103.33" id="Mf9-IG-8yu"/>
+                                                    <constraint firstAttribute="height" constant="45.329999999999998" id="rto-gC-tqa"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="找靈感">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" red="0.99215686274509807" green="0.55294117647058827" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="chooseFood:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G1A-hb-5Y1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SyS-KU-v3f" firstAttribute="centerY" secondItem="bhc-Oe-jG0" secondAttribute="centerY" id="txY-gM-PfE"/>
+                                            <constraint firstItem="SyS-KU-v3f" firstAttribute="centerX" secondItem="bhc-Oe-jG0" secondAttribute="centerX" id="uaC-mD-Izc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4kF-Ib-lAf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2EP-UI-Izr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4kF-Ib-lAf" secondAttribute="bottom" id="kAl-ey-T2N"/>
+                            <constraint firstItem="4kF-Ib-lAf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mTI-Ch-5sh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4kF-Ib-lAf" secondAttribute="trailing" id="ppc-j5-xPj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="foodImageView" destination="SN3-Yg-bk8" id="S9x-tt-h3D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.58778625954199" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cn" width="400" height="400"/>
+    </resources>
 </document>

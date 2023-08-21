@@ -14,6 +14,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    let food = [ #imageLiteral(resourceName: "us"),  #imageLiteral(resourceName: "vn"),  #imageLiteral(resourceName: "jp"),  #imageLiteral(resourceName: "cn"),  #imageLiteral(resourceName: "kr"), ]
+    
+    @IBOutlet weak var foodImageView: UIImageView!
+    
 
+    @IBAction func chooseFood(_ sender: UIButton) {
+        
+        foodImageView.image = food[Int.random(in: 0...4)]
+        
+    }
+    
 }
 
