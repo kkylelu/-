@@ -1,4 +1,6 @@
-# whatsforlunch
+# 午餐吃什麼 (whatsforlunch)
+
+## APP 介紹
 點選按鈕找靈感，隨機推薦各國料理，午餐不必再煩惱！
 
 ## 學習目標
