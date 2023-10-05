@@ -11,3 +11,6 @@
 
 ## APP 畫面
 ![me](https://github.com/kkylelu/whatsforlunch/blob/06accb5739876e155a43146f9c409f576146dc6b/2023-08-21%20at%2022.32.02.gif)
+
+## 心得筆記
+https://kylelu.com/2023/08/22/whatsforlunch-arrayint-random
